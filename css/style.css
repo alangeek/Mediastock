@@ -640,7 +640,7 @@ button:disabled {
   display: none;
 }
 
-input-wrapper:has(:placeholder-shown) + .icon-btn {
+.input-wrapper:has(:placeholder-shown) + .icon-btn {
   display: none;
 }
 

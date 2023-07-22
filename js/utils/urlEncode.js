@@ -1,6 +1,11 @@
-/**
-* @copyright codewithsadee 2023
-* @author sadee <codewithsadee@gmail.com>
-*/
+'use strict'
 
-"use strict";
+/**
+ * Convert Object to Url
+ * @param {Object} urlObj  url object
+ * @returns url String
+ */
+
+export const urlEncode = urlObj => {
+  return Object.entries(urlObj).join("&").replace(/,/g, "=").replace(/#/g, "%23")
+}
