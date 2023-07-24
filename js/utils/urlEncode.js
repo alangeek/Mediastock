@@ -7,5 +7,8 @@
  */
 
 export const urlEncode = urlObj => {
-  return Object.entries(urlObj).join("&").replace(/,/g, "=").replace(/#/g, "%23")
+  return Object.entries(urlObj)
+    .join('&')
+    .replace(/,/g, '=')
+    .replace(/#/g, '%23')
 }
